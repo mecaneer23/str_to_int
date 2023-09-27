@@ -1,6 +1,6 @@
 use std::io::{self, Write};
 
-fn pos_int(s: &str) -> i32 {
+fn int(s: &str) -> i32 {
     let mut num: i32 = 0;
     let len: u32 = s.len() as u32;
     let mut multiplier = 1;
@@ -23,5 +23,5 @@ fn input(query_string: &str) -> String {
 }
 
 fn main() {
-    println!("{}", pos_int(&input("Enter a number: ")));
+    println!("{}", int(&input("Enter a number: ")));
 }
